@@ -67,7 +67,10 @@ baseline: spec
 							'Sound' 
 							"'Alien-Core'"
 							'CogVMMakerPharoCompatibility') ];
-				package: 'MethodMassagePharoCompatibility' with: [ spec requires: #('VMMaker' ) ];
+				package: 'MethodMassageCompatibility' with: [ 
+					spec
+						file: 'MethodMassagePharoCompatibility.package';
+						requires: #('VMMaker' ) ];
 			 	package: 'BytecodeSets' with: [ spec requires: 'VMMaker' ];
 				package: 'CMakeLibSSH2' with: [ spec requires: 'CMakeVMMaker' ];
 				package: 'CMakeLibGit2' with: [ spec requires: 'CMakeVMMaker' ];
