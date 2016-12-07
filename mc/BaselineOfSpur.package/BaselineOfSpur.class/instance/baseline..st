@@ -69,7 +69,7 @@ baseline: spec
 							'CogVMMakerPharoCompatibility') ];
 				package: 'MethodMassageCompatibility' with: [ 
 					spec
-						file: 'MethodMassagePharoCompatibility.package';
+						file: 'MethodMassagePharoCompatibility';
 						requires: #('VMMaker' ) ];
 			 	package: 'BytecodeSets' with: [ spec requires: 'VMMaker' ];
 				package: 'CMakeLibSSH2' with: [ spec requires: 'CMakeVMMaker' ];
