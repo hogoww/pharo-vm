@@ -19,7 +19,6 @@ baseline: spec
 			package: 'Cog' with: [ spec requires: #('VMMaker' ) ];
 			package: 'ImageFormat' with: [ spec requires: #('VMMaker' ) ];
 			package: 'MethodMassage' with: [ spec requires: #('VMMaker' ) ];
-			package: 'MethodMassageCompatibility' with: [ spec requires: #('VMMaker' ) ];
 			package: 'Qwaq-VMProfiling-Plugins' with: [ spec requires: #('VMMaker' ) ];
 			package: 'VMConstruction-Plugins-AioPlugin' with: [ spec requires: #('VMMaker') ];
 			package: 'VMConstruction-Plugins-OSProcessPlugin' with: [ 
@@ -48,6 +47,11 @@ baseline: spec
 				'Applescript-Core'
 				'CryptographyPlugins') ].
 		
+		spec for: #squeak do: [ 
+			spec
+				package: 'MethodMassageCompatibility' with: [ spec requires: #('VMMaker' ) ].
+		].
+		
 		spec for: #pharo do: [		
 			spec 
 				package: 'CogVMMakerPharoCompatibility';
@@ -63,6 +67,7 @@ baseline: spec
 							'Sound' 
 							"'Alien-Core'"
 							'CogVMMakerPharoCompatibility') ];
+				package: 'MethodMassagePharoCompatibility' with: [ spec requires: #('VMMaker' ) ];
 			 	package: 'BytecodeSets' with: [ spec requires: 'VMMaker' ];
 				package: 'CMakeLibSSH2' with: [ spec requires: 'CMakeVMMaker' ];
 				package: 'CMakeLibGit2' with: [ spec requires: 'CMakeVMMaker' ];
