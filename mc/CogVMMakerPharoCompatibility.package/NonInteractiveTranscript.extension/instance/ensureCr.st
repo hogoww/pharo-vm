@@ -1,3 +1,3 @@
 *CogVMMakerPharoCompatibility
 ensureCr
-	stream ensureCr
+	self stream ensureCr
