@@ -31,4 +31,4 @@ primitiveCompareWith
 			[self rawCompare: string1 length: strLength1 with: string2 length: strLength2 accessBlock:
 				[:str :index | objectMemory fetchByte: (objectMemory fetchByte: index ofObject: str) + 1 ofObject: order ]].
 
-	self methodReturnInteger: result
+	self pop: argumentCount+1 thenPushInteger: result.
